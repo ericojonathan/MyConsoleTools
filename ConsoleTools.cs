@@ -47,12 +47,39 @@ namespace WinConsole
         #endregion
         #region "Lines"
         #region "Input Lines"
+
         static string InputLine(string txt) { WriteLine(txt); return ReadLine(); }
+
+        static string InputLine(string txt, object[] args) { Console.WriteLine(txt, new object[] { args }); return ReadLine(); }
+
+        static string InputLine(string txt, object arg0) { Console.WriteLine(txt, new object[] { arg0 }); return ReadLine(); }
+
+        static string InputLine(string txt, object arg0, object arg1) { Console.WriteLine(txt, new object[] { arg0, arg1 }); return ReadLine(); }
+
+        static string InputLine(string txt, object arg0, object arg1, object arg2) { Console.WriteLine(txt, new object[] { arg0, arg1, arg2 }); return ReadLine(); }
+
+        static string InputLine(string txt, object arg0, object arg1, object arg2, object arg3) { Console.WriteLine(txt, new object[] { arg0, arg1, arg2, arg3 }); return ReadLine(); }
+
+        static string InputLine(string txt, object arg0, object arg1, object arg2, object arg3, object arg4) { Console.WriteLine(txt, new object[] { arg0, arg1, arg2, arg3, arg4 }); return ReadLine(); }
+
         #endregion
         #region "WriteLines"
         static void WriteLine(string txt) { Console.WriteLine(txt); }
+
+        static void WriteLine(string txt, object[] args) { Console.WriteLine(txt, new object[] { args }); }
+
+        static void WriteLine(string txt, object arg0) { Console.WriteLine(txt, new object[] { arg0 }); }
+
+        static void WriteLine(string txt, object arg0, object arg1) { Console.WriteLine(txt, new object[] { arg0, arg1 }); }
+
+        static void WriteLine(string txt, object arg0, object arg1, object arg2) { Console.WriteLine(txt, new object[] { arg0, arg1, arg2 }); }
+
+        static void WriteLine(string txt, object arg0, object arg1, object arg2, object arg3) { Console.WriteLine(txt, new object[] { arg0, arg1, arg2, arg3 }); }
+
+        static void WriteLine(string txt, object arg0, object arg1, object arg2, object arg3, object arg4) { Console.WriteLine(txt, new object[] { arg0, arg1, arg2, arg3, arg4 }); }
+
         #endregion
-        #region "ReadLines()
+        #region "ReadLines"
         static string ReadLine() { return Console.ReadLine(); }
         #endregion
         #endregion
