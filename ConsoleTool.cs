@@ -1,6 +1,6 @@
 ﻿using System;
 
-// Usage: using ct = ConsoleTools.Tools;
+// Usage: using ct = ConsoleTools.Tool;
 
 namespace ConsoleTools
 {
