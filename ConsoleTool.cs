@@ -34,7 +34,7 @@ namespace ConsoleTools
 
         public static string InputLine(string txt) { WriteLine(txt); return ReadLine(); }
 
-        public static string InputLine(string txt, param object[] args) { Console.WriteLine(txt, new object[] { args }); return ReadLine(); }
+        public static string InputLine(string txt, param object[] args) { WriteLine(txt,  args); return ReadLine(); }
 
         #endregion
         #region "WriteLines"
