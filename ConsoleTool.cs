@@ -17,14 +17,14 @@ namespace ConsoleTools
         #region "Write"
         public static void Write(string txt) { Console.Write(txt); }
 
-        public static void Write(string txt, param object[] args) { Console.Write(txt, args); }
+        public static void Write(string txt, params object[] args) { Console.Write(txt, args); }
         #endregion
 
         #region "Inputs"
         
         public static string Input(string txt) { Write(txt); return ReadLine(); }
 
-        public static string Input(string txt, param object[] args) { Write(txt, args); return ReadLine(); }
+        public static string Input(string txt, params object[] args) { Write(txt, args); return ReadLine(); }
 
         #endregion
 
@@ -34,13 +34,13 @@ namespace ConsoleTools
 
         public static string InputLine(string txt) { WriteLine(txt); return ReadLine(); }
 
-        public static string InputLine(string txt, param object[] args) { WriteLine(txt,  args); return ReadLine(); }
+        public static string InputLine(string txt, params object[] args) { WriteLine(txt,  args); return ReadLine(); }
 
         #endregion
         #region "WriteLines"
         public static void WriteLine(string txt) { Console.WriteLine(txt); }
 
-        public static void WriteLine(string txt, param object[] args) { Console.WriteLine(txt,  args);} 
+        public static void WriteLine(string txt, params object[] args) { Console.WriteLine(txt,  args);} 
 
         #endregion
 
